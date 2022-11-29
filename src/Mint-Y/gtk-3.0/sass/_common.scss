@@ -1026,10 +1026,13 @@ headerbar,
 
   &.default-decoration {
     min-height: 28px;
-    padding: 0 3px;
     border-bottom-width: 0;
 
     .maximized & { background-color: opacify($header_bg, 1); }
+  }
+
+  .csd & {  // bigger padding only in csd windows
+    padding: 0 7px;
   }
 
   .solid-csd & {
